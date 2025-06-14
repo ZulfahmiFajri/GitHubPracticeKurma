@@ -1,6 +1,6 @@
 #ifndef DIV_H
 #define DIV_H
 
-float divide(int a, int b);
+float div(int a, int b);
 
 #endif
