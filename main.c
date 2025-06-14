@@ -2,6 +2,7 @@
 #include "add.h"
 #include "sub.h"
 #include "mul.h"
+#include "div.h"
 
 int main() {
     int a, b, pilihan;
@@ -31,6 +32,9 @@ int main() {
                 break;
             case 3:
                 printf("Hasil: %d\n", mul(a, b));
+                break;
+            case 4:
+                printf("Hasil: %.2f\n", div(a, b));
                 break;
             default:
                 printf("Pilihan tidak valid.\n");
