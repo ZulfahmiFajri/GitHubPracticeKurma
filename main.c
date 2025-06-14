@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "add.h"
 #include "sub.h"
+#include "mul.h"
 
 int main() {
     int a, b, pilihan;
@@ -14,7 +15,7 @@ int main() {
         printf("5. Keluar\n");
         printf("Pilih operasi (1-5): ");
         scanf("%d", &pilihan);
-         if (pilihan == 5) {
+        if (pilihan == 5) {
             printf("Terima kasih telah menggunakan kalkulator.\n");
             break;
         }
@@ -27,6 +28,9 @@ int main() {
                 break;
             case 2:
                 printf("Hasil: %d\n", sub(a, b));
+                break;
+            case 3:
+                printf("Hasil: %d\n", mul(a, b));
                 break;
             default:
                 printf("Pilihan tidak valid.\n");
