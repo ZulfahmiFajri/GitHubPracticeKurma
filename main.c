@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "add.h"
 
 int main() {
-    int pilihan;
+    int a, b, pilihan;
     
     while (1) {
         printf("\n==== Kalkulator Sederhana ====\n");
@@ -15,6 +16,16 @@ int main() {
          if (pilihan == 5) {
             printf("Terima kasih telah menggunakan kalkulator.\n");
             break;
+        }
+        printf("Masukkan dua angka: ");
+        scanf("%d %d", &a, &b);
+
+        switch (pilihan) {
+            case 1:
+                printf("Hasil: %d\n", add(a, b));
+                break;
+            default:
+                printf("Pilihan tidak valid.\n");
         }
     }
     return 0;
