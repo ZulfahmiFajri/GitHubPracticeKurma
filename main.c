@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "add.h"
+#include "sub.h"
 
 int main() {
     int a, b, pilihan;
@@ -23,6 +24,9 @@ int main() {
         switch (pilihan) {
             case 1:
                 printf("Hasil: %d\n", add(a, b));
+                break;
+            case 2:
+                printf("Hasil: %d\n", sub(a, b));
                 break;
             default:
                 printf("Pilihan tidak valid.\n");
